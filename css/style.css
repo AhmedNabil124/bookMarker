@@ -1,0 +1,43 @@
+h1,
+p {
+    color: #aaa !important;
+}
+
+.contentBody {
+    background-color: rgb(238, 238, 238);
+}
+
+
+.row .content {
+    background-image: linear-gradient(#EEE, #FFF);
+    padding: 24px;
+    margin: 16px 0;
+}
+
+.row .content h3 {
+    width: 30%;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.alert {
+    display: none;
+}
+
+@media (max-width:567px) {
+    .row .content h3 {
+        width: 40%;
+    }
+
+    .contentBody h3 {
+        font-size: 18px;
+    }
+
+    #searchUrl {
+        width: 100% !important;
+    }
+
+    .btn-outline-danger {
+        margin-left: 15px;
+    }
+}

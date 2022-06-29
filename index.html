@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmarker</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Cairo:wght@700;800&family=Langar&family=Roboto:wght@100;300;500&family=Varela+Round&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container my-5 border-bottom border-dark">
+    <h1 class="pb-4">Bookmarker</h1>
+  </div>
+
+  <div class="container contentBody text-center p-5">
+    <h3>Bookmark your favorite sites</h3>
+    <div>
+      <label for="siteName" class="py-4 fw-bold fs-4">Site Name</label>
+      <input type="text" onkeyup="vaildName()" class="form-control" id="siteName" placeholder="Bookmark Name" />
+      <div class="alert alert-danger" id="alertName">
+        Enter Vaild websit Name Start With Capital Letter
+      </div>
+    </div>
+    <div>
+      <label for="siteUrl" class="py-4 fw-bold fs-4">Site Url</label>
+      <!-- <input type="text" onkeyup="vaildUrl()" class="form-control" id="siteUrl" placeholder="Bookmark Url" /> -->
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">https://www.example.com</span>
+        <input type="text" onkeyup="vaildUrl()" id="siteUrl"  class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      <div class="alert alert-danger" id="alertUrl">Enter Vaild Url</div>
+    </div>
+    <div class="container-fluid">
+      <input type="text" onkeyup="searchWebsite()" class="form-control w-50 mx-auto mt-5 p-2" id="searchUrl"
+        placeholder="Search" />
+    </div>
+    <button class="btn btn-outline-primary mt-5" onclick="addWebsite()">
+      Submit
+    </button>
+    <button class="btn btn-outline-danger mt-5" onclick="clearData()">
+      Clear
+    </button>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row" id="rowItem"></div>
+  </div>
+  <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4 -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
